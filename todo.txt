@@ -1,4 +1,7 @@
 - Todo list
 
-- Install and setup (Django) - DONE
-- Install and setup (Vue) - DONE
+- Install and setup (Django) - DONE 15.06.2022
+- Install and setup (Vue) - DONE 15.06.2022
+- Include Font Awesome - DONE 15.06.2022
+- Set up the base template - DONE 15.06.2022
+- Create django app and models for products

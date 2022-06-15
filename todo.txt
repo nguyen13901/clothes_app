@@ -1,0 +1,4 @@
+- Todo list
+
+- Install and setup (Django) - DONE
+- Install and setup (Vue) - DONE

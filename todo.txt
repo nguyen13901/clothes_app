@@ -4,4 +4,6 @@
 - Install and setup (Vue) - DONE 15.06.2022
 - Include Font Awesome - DONE 15.06.2022
 - Set up the base template - DONE 15.06.2022
-- Create django app and models for products
+- Create django app and models for products - DONE 15.06.2022
+- Create serializer and views for the products - DONE 16.06.2022
+- Create simple front page (lastest product)

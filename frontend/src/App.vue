@@ -41,12 +41,14 @@
 </template>
 
 <script>
+
   export default {
     data() {
       return {
         showMobileMenu: false,
       }
-    }
+    }, 
+
   }
 </script>
 

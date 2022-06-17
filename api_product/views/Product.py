@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 
-from api_product.models import Product
+from api_product.models import Product, Category
 from api_product.serializers import ProductSerializer
 
 
@@ -54,3 +54,14 @@ class DetailProductView(APIView):
         product = self.get_object(category_slug, product_slug)
         serializer = ProductSerializer(product)
         return Response(serializer.data)
+
+
+class ProductByCategoryView(APIView):
+    def get(self, request, category_slug):
+        category = Category.objects.filter(name=category_slug)
+        if category.exists():
+            category = category.first()
+            products = category.products.all()
+            serializer = ProductSerializer(products, many=True)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_404_NOT_FOUND)

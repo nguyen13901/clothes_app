@@ -6,4 +6,21 @@
 - Set up the base template - DONE 15.06.2022
 - Create django app and models for products - DONE 15.06.2022
 - Create serializer and views for the products - DONE 16.06.2022
-- Create simple front page (lastest product)
+- Create simple front page (the latest product) - DONE 16.06.2022
+- View a detail product: DONE 16.06.2022
+    + Create viewset in Django
+    + Create vue page for showing product
+    + Add link to detail page
+- Sette opp Vuex / State DONE
+- Make it possible to add to cart: - DONE 17.02.2022
+    - DONE Add functionality to vuex
+    - Initialize store in app.vue
+    - Add button to product page
+    - Show a toast message
+- Implement a loading bar - DONE 17.02.2022
+- Set document title (All pages) DONE - 17.02.2022
+- Make it possible to view a category
+    + Convert the product to a component
+- Add search functionality
+- View cart
+    + A cart item should be a component

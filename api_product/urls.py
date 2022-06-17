@@ -8,5 +8,6 @@ router = routers.DefaultRouter()
 router.register("products", views.LatestProductsListView, basename="product")
 
 urlpatterns = [
-    path("", include(router.urls))
+    path("", include(router.urls)),
+    path('products/<slug:category_slug>/<slug:product_slug>/', views.DetailProductView.as_view(), name="detail_product"),
 ]

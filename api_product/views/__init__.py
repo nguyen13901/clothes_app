@@ -1,1 +1,1 @@
-from .Product import LatestProductsListView
+from .Product import LatestProductsListView, DetailProductView

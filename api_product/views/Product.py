@@ -1,5 +1,7 @@
+from django.db.models import Q
 from django.http import Http404
 from rest_framework import status
+from rest_framework.decorators import action, api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
@@ -8,14 +10,25 @@ from api_product.models import Product, Category
 from api_product.serializers import ProductSerializer
 
 
-class LatestProductsListView(ModelViewSet):
-    serializer_class = ProductSerializer
-    queryset = Product.objects.all()
+class LatestProductsListView(APIView):
 
-    def list(self, request, *args, **kwargs):
-        products = self.get_queryset()[0:4]
-        serializer = self.get_serializer(products, many=True)
+    def get(self, request):
+        products = Product.objects.all()[0:4]
+        serializer = ProductSerializer(products, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+    # @action(methods=['GET'], detail=False)
+
+
+@api_view(['GET'])
+def search(request):
+    query = request.query_params.get("query", "")
+    products = {}
+    if query:
+        q = Q(name__icontains=query) | Q(description__icontains=query)
+        products = Product.objects.filter(q)
+    serializer = ProductSerializer(products, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
 
     # @action(detail=True, methods=['GET'])
     # def get_detail_product(self, request, *args, **kwargs):

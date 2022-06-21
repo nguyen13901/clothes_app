@@ -12,15 +12,18 @@
     + Create vue page for showing product
     + Add link to detail page
 - Sette opp Vuex / State DONE
-- Make it possible to add to cart: - DONE 17.02.2022
+- Make it possible to add to cart: - DONE 17.06.2022
     - DONE Add functionality to vuex
     - Initialize store in app.vue
     - Add button to product page
     - Show a toast message
-- Implement a loading bar - DONE 17.02.2022
-- Set document title (All pages) DONE - 17.02.2022
-- Make it possible to view a category
+- Implement a loading bar - DONE 17.06.2022
+- Set document title (All pages) DONE - 17.06.2022
+- Make it possible to view a category DONE - 21.06.2022
     + Convert the product to a component
-- Add search functionality
+- Add search functionality - 21.06.2022
 - View cart
     + A cart item should be a component
+- Change contents of cart
+    - Implement/Decrement content
+    - Remove from cart

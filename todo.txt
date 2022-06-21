@@ -17,7 +17,7 @@
     - Initialize store in app.vue
     - Add button to product page
     - Show a toast message
-- Implement a loading bar - DONE 17.06.2022
+- Implement a loading bar - DONE 17.06.2    `022
 - Set document title (All pages) DONE - 17.06.2022
 - Make it possible to view a category DONE - 21.06.2022
     + Convert the product to a component

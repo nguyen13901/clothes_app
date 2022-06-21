@@ -21,9 +21,9 @@
 - Set document title (All pages) DONE - 17.06.2022
 - Make it possible to view a category DONE - 21.06.2022
     + Convert the product to a component
-- Add search functionality - 21.06.2022
-- View cart
+- Add search functionality DONE - 21.06.2022
+- View cart DONE - 21.06.2022
     + A cart item should be a component
-- Change contents of cart
+- Change contents of cart DONE - 21.06.2022
     - Implement/Decrement content
     - Remove from cart

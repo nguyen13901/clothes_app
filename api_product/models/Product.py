@@ -4,7 +4,7 @@ from PIL import Image
 from django.core.files import File
 from django.utils import timezone
 
-from .Category import Category
+from api_product.models import Category
 
 
 class Product(models.Model):

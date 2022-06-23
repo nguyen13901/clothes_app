@@ -13,6 +13,7 @@ import CartView from '../views/CartView.vue'
 import signUp from '../views/SignUp.vue'
 import LogIn from '../views/LogIn.vue'
 import MyAccount from '../views/MyAccount.vue'
+import checkOut from '../views/CheckOut.vue'
 
 const routes = [
   {
@@ -65,7 +66,15 @@ const routes = [
     meta: {
       requireLogin: true
     }
-  }
+  },
+  {
+    path: '/cart/check-out',
+    name: 'checkOut',
+    component: checkOut,
+    meta: {
+      requireLogin: true
+    }
+  },
 ]
 
 const router = createRouter({

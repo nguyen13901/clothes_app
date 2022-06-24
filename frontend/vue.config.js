@@ -1,10 +1,10 @@
 module.exports = {
   devServer: {
     headers: {
-      "Access-Control-Allow-Origin": "https://gleaming-narwhal-31cfb9.netlify.app/",
+      "Access-Control-Allow-Origin": "https://55cd-190-2-130-168.eu.ngrok.io/",
     },
     host: "localhost",
-    proxy: "https://gleaming-narwhal-31cfb9.netlify.app/",
-    port: "8080",
+    proxy: "https://55cd-190-2-130-168.eu.ngrok.io/",
+    port: "8000",
   },
 };

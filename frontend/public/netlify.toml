@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "https://gleaming-narwhal-31cfb9.netlify.app/"
+  to = "https://55cd-190-2-130-168.eu.ngrok.io/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

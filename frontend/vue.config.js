@@ -1,7 +1,7 @@
 module.exports = {
   devServer: {
     headers: {
-      "Access-Control-Allow-Origin": "https://55cd-190-2-130-168.eu.ngrok.io/",
+      "Access-Control-Allow-Origin": "*",
     },
     host: "localhost",
     proxy: "https://55cd-190-2-130-168.eu.ngrok.io/",

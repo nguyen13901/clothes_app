@@ -5,6 +5,6 @@ module.exports = {
     },
     host: "localhost",
     proxy: "https://55cd-190-2-130-168.eu.ngrok.io/",
-    port: "8000",
+    port: "8080",
   },
 };

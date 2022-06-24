@@ -1,7 +1,7 @@
 module.exports = {
   devServer: {
     headers: {
-      "Access-Control-Allow-Origin": "http://localhost:8000/",
+      "Access-Control-Allow-Origin": "https://gleaming-narwhal-31cfb9.netlify.app",
     },
     host: "localhost",
     proxy: "http://localhost:8000/",
